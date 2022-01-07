@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import { createSlice } from "@reduxjs/toolkit";
-import {getBugs} from '../bugController'
+import {retrieveBugs} from '../bugController'
 
 const slice = createSlice({
     name: "bug",
     initialState: [],
     reducers: {
-        getBugs: state => getBugs(),
+        getBugs: state => retrieveBugs(),
         createBugs: (state, actions) => {
             
         },

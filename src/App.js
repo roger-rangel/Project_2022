@@ -1,14 +1,16 @@
-import React, {Component} from 'react';
-// import './App.css';
+import React from 'react';
+import { useSelector } from 'react-redux';
+import './App.css';
+import Login from './Views/LogIn/login'
 
-class App extends Component {
-  render() {  
+function App() {
+  const {auth} = useSelector(state => state)
     return (
-      <div className="App">
-        <h1>Bug Tracker</h1>
-      </div>
+      <>
+        {!auth.LoggedIn ? <Login /> : <h1>Hello Dashboard</h1>}
+      </>
     );
   }
-}
+
 
 export default App;

@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import bugModel from "../Models/bugModel";
 
-export function getBugs() {
+export function retrieveBugs() {
     let data = [];
     
     data.push(new bugModel({
