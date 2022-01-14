@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { signIn } from '../../Controllers/Redux/authSlice';
-import logo from '../../images/logo-white.png'
+import logo from '../../assets/logo-white.png'
 import './login.css';
 
 export default () => {
