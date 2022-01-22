@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Login from './Views/LogIn/login';
+import Navbar from './Views/Navbar/Navbar'
 
 import NavContext from './Context/NavContext';
 
@@ -17,7 +18,8 @@ function App() {
         {!auth.LoggedIn ? <Login /> :
           <div className='App'>
             <NavContext.Provider value={value} >
-            <h1>Hello Dashboard</h1>
+              <Navbar />
+              <main>TEST MAIN</main>
             </NavContext.Provider>
           </div>
         }
