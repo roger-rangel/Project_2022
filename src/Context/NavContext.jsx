@@ -2,7 +2,7 @@ import { createContext } from "react";
 
 const NavContext = createContext({
     nav: false,
-    setNav: () => {}
-})
+    setNav: () => { },
+});
 
 export default NavContext;

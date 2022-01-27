@@ -19,7 +19,7 @@ function App() {
           <div className='App'>
             <NavContext.Provider value={value} >
               <Navbar />
-              <main>TEST MAIN</main>
+              <main>DASHBOARD</main>
             </NavContext.Provider>
           </div>
         }
