@@ -5,6 +5,9 @@ import { Routes, Route } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Login from './Views/LogIn/login';
 import Navbar from './Views/Navbar/Navbar'
+import Container from './Views/Container/Container';
+import RightNavbar from './Views/RightNavbar/RigthNavBar';
+
 
 import NavContext from './Context/NavContext';
 
@@ -19,7 +22,13 @@ function App() {
           <div className='App'>
             <NavContext.Provider value={value} >
               <Navbar />
-              <main>DASHBOARD</main>
+              <Container
+                stickyNav={<RightNavbar />}
+                content={
+                  <Routes>
+                  </Routes>
+                }
+              />
             </NavContext.Provider>
           </div>
         }
