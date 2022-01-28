@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 //REACT ROUTER
 import { Link } from "react-router-dom";
 

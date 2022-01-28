@@ -8,6 +8,9 @@ import Navbar from './Views/Navbar/Navbar'
 import Container from './Views/Container/Container';
 import RightNavbar from './Views/RightNavbar/RigthNavBar';
 
+import NewBug from './Views/Pages/NewBug/NewBug';
+import Dashboard from './Views/Pages/Dashboard/Dashboard';
+
 
 import NavContext from './Context/NavContext';
 
@@ -26,6 +29,8 @@ function App() {
                 stickyNav={<RightNavbar />}
                 content={
                   <Routes>
+                    <Route path="/" element={<Dashboard />} />
+                    <Route path = "/NewBug" element = {<NewBug />} />
                   </Routes>
                 }
               />

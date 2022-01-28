@@ -10,11 +10,19 @@ import NavContext from "../../Context/NavContext";
 //ICONS , IMAGES
 import { MdOutlineMenu } from "react-icons/md";
 
-//Components
+//Submenus in RightNavbar
 import MyProfile from "./Submenus/MyProfile";
 import Support from "./Submenus/Support";
 import Notifications from "./Submenus/Notifications";
 import Search from "./Submenus/Search";
+
+// LINK
+import { Link } from "react-router-dom";
+
+//ICONS
+import {
+  MdAddBox
+} from "react-icons/md";
 
 const RightNavbar = () => {
   const { nav, setNav } = useContext(NavContext);
@@ -31,6 +39,11 @@ const RightNavbar = () => {
         <MdOutlineMenu />
       </div>
 
+      {/* ADD NEW BUG */}
+      <div >
+        <Link to='/NewBug' className={styles.add_new_bug}><MdAddBox size={35} style={{ fill: 'rgb(85, 79, 232)' }} /></Link>
+      </div>
+      
       {/* ACTIONS */}
       <div className={styles.actions}>
         <Search />

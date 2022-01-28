@@ -13,10 +13,11 @@ import { NavLink } from "react-router-dom";
 import {
   MdOutlineDashboard,
   MdOutlineAnalytics,
-  MdOutlinedFlag,
+  MdDonutSmall,
   MdPeopleOutline,
   MdOutlineMessage,
   MdOutlineLogout,
+  MdBugReport,
 } from "react-icons/md";
 import { IoMdLogIn } from "react-icons/io";
 import { FaReact, FaTimes } from "react-icons/fa";
@@ -75,9 +76,10 @@ const Navbar = () => {
           />
           <NavUrl
             url="campaings"
-            icon={<MdOutlinedFlag />}
-            description="Campaings"
+            icon={<MdDonutSmall />}
+            description="Projects"
           />
+          
           <NavUrl url="team" icon={<MdPeopleOutline />} description="Team" />
 
           <NavUrl
@@ -91,11 +93,7 @@ const Navbar = () => {
             {nav ? "More" : <BsThreeDots />}
           </span>
 
-          <NavUrl
-            url="other1"
-            icon={<IoMdLogIn />}
-            description="Authentication"
-          />
+          <NavUrl url="team" icon={<MdBugReport />} description="All Tickets" />
           <NavUrl url="other2" icon={<FaReact />} description="ReactJs" />
         </ul>
         {/* LOGOUT BUTTON */}
