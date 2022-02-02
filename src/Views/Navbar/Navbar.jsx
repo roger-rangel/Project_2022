@@ -24,12 +24,14 @@ import { FaReact, FaTimes } from "react-icons/fa";
 import { BsThreeDots } from "react-icons/bs";
 import { VscDashboard } from "react-icons/vsc";
 
+
 const NavUrl = ({ url, icon, description }) => {
+  
   const { nav, setNav } = useContext(NavContext);
   const checkWindowSize = () => {
       if (window.innerWidth < 1024) setNav(!nav);
   };
-    
+  
     return (<li className={styles.li_navlink}>
       <NavLink to={`${url}`}
         onClick={() => checkWindowSize()}
@@ -93,8 +95,7 @@ const Navbar = () => {
             {nav ? "More" : <BsThreeDots />}
           </span>
 
-          <NavUrl url="team" icon={<MdBugReport />} description="All Tickets" />
-          <NavUrl url="other2" icon={<FaReact />} description="ReactJs" />
+          <NavUrl url="all-bugs" icon={<MdBugReport />} description="All Bugs" />
         </ul>
         {/* LOGOUT BUTTON */}
         <div

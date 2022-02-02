@@ -5,7 +5,7 @@ export function retrieveBugs() {
     let data = [];
     
     data.push(new bugModel({
-        _id: 2345678,
+        id: 2345678,
         name: "Crash on Load",
         details: "Crashes after 3 seconds",
         steps: "Open application and it crashes",
@@ -16,7 +16,7 @@ export function retrieveBugs() {
         time: "11:55"
     }))  
     data.push(new bugModel({
-        _id: 2345678,
+        id: 2345678,
         name: "Won't Load",
         details: "Crashes after 3 seconds",
         steps: "Open application and it crashes",

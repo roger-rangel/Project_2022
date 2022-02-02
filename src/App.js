@@ -9,6 +9,7 @@ import Container from './Views/Container/Container';
 import RightNavbar from './Views/RightNavbar/RigthNavBar';
 
 import NewBug from './Views/Pages/NewBug/NewBug';
+import ViewBugs from './Views/Pages/ViewBugs/ViewBugs';
 import Dashboard from './Views/Pages/Dashboard/Dashboard';
 
 
@@ -29,8 +30,10 @@ function App() {
                 stickyNav={<RightNavbar />}
                 content={
                   <Routes>
+                    <Route path="*" element={<main>NOT FOUND</main>} />
                     <Route path="/" element={<Dashboard />} />
-                    <Route path = "/NewBug" element = {<NewBug />} />
+                    <Route path="/NewBug" element={<NewBug />} />
+                    <Route path = "/all-bugs" element = {<ViewBugs />} />
                   </Routes>
                 }
               />

@@ -12,15 +12,20 @@ import authReducer from './Controllers/Redux/authSlice';
 import bugReducer from './Controllers/Redux/bugSlice';
 import userReducer from './Controllers/Redux/userSlice';
 
+
+
 //Redux Configure
 const reducer = combineReducers({
   auth: authReducer,
-  bug: bugReducer,
+  bugs: bugReducer,
   user: userReducer
 })
 
 const store = configureStore({
-  reducer
+  reducer,
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware({
+  serializableCheck: false
+}),
 })
 
 ReactDOM.render(
@@ -28,7 +33,7 @@ ReactDOM.render(
     <BrowserRouter>
       <App />
     </BrowserRouter>
-    </Provider>,
+  </Provider>,
   document.getElementById('root')
 );
 

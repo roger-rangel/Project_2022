@@ -2,6 +2,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 import {retrieveBugs} from '../bugController'
 
+const reducerAction = (state, actions) => { };
+
 const slice = createSlice({
     name: "bug",
     initialState: [],
