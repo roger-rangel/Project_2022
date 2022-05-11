@@ -8,10 +8,12 @@ import Navbar from './Views/Navbar/Navbar'
 import Container from './Views/Container/Container';
 import RightNavbar from './Views/RightNavbar/RigthNavBar';
 
-import NewBug from './Views/Pages/NewBug/NewBug';
+// import NewBug from './Views/Pages/NewBug/NewBug';
 import ViewBugs from './Views/Pages/ViewBugs/ViewBugs';
 import Dashboard from './Views/Pages/Dashboard/Dashboard';
-
+import Analytics from './Views/Pages/Analytics/Analytics';
+import Campaigns from './Views/Pages/Campaigns/Campaigns';
+import Team from './Views/Pages/Team/Team';
 
 import NavContext from './Context/NavContext';
 
@@ -32,7 +34,9 @@ function App() {
                   <Routes>
                     <Route path="*" element={<main>NOT FOUND</main>} />
                     <Route path="/" element={<Dashboard />} />
-                    <Route path="/NewBug" element={<NewBug />} />
+                    <Route path="/analytics" element={<Analytics />} />
+                    <Route path="/campaigns" element={<Campaigns />} />
+                    <Route path="/team" element={<Team />} />
                     <Route path = "/all-bugs" element = {<ViewBugs />} />
                   </Routes>
                 }

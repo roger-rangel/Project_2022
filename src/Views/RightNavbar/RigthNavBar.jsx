@@ -41,7 +41,12 @@ const RightNavbar = () => {
 
       {/* ADD NEW BUG */}
       <div >
-        <Link to='/NewBug' className={styles.add_new_bug}><MdAddBox size={35} style={{ fill: 'rgb(85, 79, 232)' }} /></Link>
+        <Link to='/' className={styles.add_new_bug}>
+          <MdAddBox  
+          onMouseOver={({target})=>target.style.fill="rgb(69, 65, 187)"} 
+          onMouseOut={({target})=>target.style.fill="rgb(85, 79, 232)"}
+          size={35} style={{ fill: 'rgb(85, 79, 232)' }} />
+        </Link>
       </div>
       
       {/* ACTIONS */}

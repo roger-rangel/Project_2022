@@ -77,25 +77,25 @@ const Navbar = () => {
             description="Analytics"
           />
           <NavUrl
-            url="campaings"
+            url="campaigns"
             icon={<MdDonutSmall />}
-            description="Projects"
+            description="Campaigns"
           />
           
           <NavUrl url="team" icon={<MdPeopleOutline />} description="Team" />
 
-          <NavUrl
+          {/* <NavUrl
             url="messages"
             icon={<MdOutlineMessage />}
             description="Messages"
-          />
+          /> */}
           
           {/* SECOND CATEGORY */}
           <span className={`${styles.categories} ${styles.second_category}`}>
             {nav ? "More" : <BsThreeDots />}
           </span>
 
-          <NavUrl url="all-bugs" icon={<MdBugReport />} description="All Bugs" />
+          {/* <NavUrl url="all-bugs" icon={<MdBugReport />} description="All Bugs" /> */}
         </ul>
         {/* LOGOUT BUTTON */}
         <div
