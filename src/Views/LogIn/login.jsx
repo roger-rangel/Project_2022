@@ -27,6 +27,7 @@ export default () => {
     
     return (
         <div className='login'> 
+        
           <div className='login-box'>
             <img className='image-logo' src={logo} alt='Logo'></img>
             <form className='login-form'>
@@ -42,6 +43,7 @@ export default () => {
 			    </div>
             </form>
           </div>
+        
         </div>
     )
 }

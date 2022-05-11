@@ -12,10 +12,9 @@
     flex-direction: column;
 	background-color: white;
 	align-items: center;
-	/* justify-content: center; */
-	background-color: #21D4FD;
-	background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+	background-color:rgb(15, 23, 42);
   	height: 100vh;
+	width:100%;
     padding-top: 2rem;
 }
 .login-form {
@@ -103,3 +102,12 @@ input {
     margin: 0 auto;
     margin-bottom: 1rem;
 }
+
+@media (max-width: 768px) {
+	.login-form {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+}
+
+

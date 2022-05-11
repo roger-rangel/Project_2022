@@ -42,7 +42,7 @@ const Support = () => {
           <CgSupport />
           <span>Support Site</span>
         </Link>
-        <Link to="/campaings">
+        <Link to="/campaigns">
           <IoNavigate />
           <span>Contact us</span>
         </Link>
